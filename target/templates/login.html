@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>MiniBanco - Login</title>
+</head>
+<body>
+  <h1>Iniciar sesion</h1>
+  {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+  <form action="/login" method="post">
+    <label>Usuario: <input type="text" name="username"></label><br>
+    <label>Contrasena: <input type="password" name="password"></label><br>
+    <button type="submit">Entrar</button>
+  </form>
+</body>
+</html>

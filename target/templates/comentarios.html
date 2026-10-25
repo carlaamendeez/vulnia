@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>MiniBanco - Comentarios</title>
+</head>
+<body>
+  <h1>Comentarios</h1>
+  <form action="/comentarios" method="post">
+    <input type="text" name="comentario" value="">
+    <button type="submit">Publicar</button>
+  </form>
+  <h2>Publicados</h2>
+  <ul>
+  <!-- VULNERABILIDAD: XSS almacenado. Cada comentario se muestra sin escapar. -->
+  {% for c in comentarios %}
+    <li>{{ c|safe }}</li>
+  {% endfor %}
+  </ul>
+</body>
+</html>
