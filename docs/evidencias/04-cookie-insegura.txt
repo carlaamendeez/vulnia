@@ -1,0 +1,2 @@
+== Set-Cookie tras login: sin HttpOnly, Secure ni SameSite ==
+Set-Cookie: session_id=s3ssion-carla; Path=/

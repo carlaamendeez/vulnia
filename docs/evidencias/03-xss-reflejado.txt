@@ -1,0 +1,2 @@
+== GET /buscar?q=<script>... -> se refleja sin escapar ==
+  <p>Resultados para: <script>alert('vulnia-xss')</script></p>

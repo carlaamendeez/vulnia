@@ -1,0 +1,30 @@
+
+=== RESULTADO DEL ESCANEO ===
+  Cabecera de seguridad ausente  16
+  Cookie insegura                1
+  SQL Injection                  1
+  XSS almacenado                 1
+  XSS reflejado                  1
+  TOTAL                          20
+
+=== DETALLE ===
+  [#21] SQL Injection | http://127.0.0.1:5000/login | campo de login (payload en username, password) | sev=Alta
+  [#22] XSS reflejado | http://127.0.0.1:5000/buscar | parametro 'q' | sev=Media
+  [#23] XSS almacenado | http://127.0.0.1:5000/comentarios | campo 'comentario' | sev=Alta
+  [#24] Cabecera de seguridad ausente | http://127.0.0.1:5000/ | Content-Security-Policy | sev=Media/Alta
+  [#25] Cabecera de seguridad ausente | http://127.0.0.1:5000/ | X-Frame-Options | sev=Media
+  [#26] Cabecera de seguridad ausente | http://127.0.0.1:5000/ | X-Content-Type-Options | sev=Baja
+  [#27] Cabecera de seguridad ausente | http://127.0.0.1:5000/ | Strict-Transport-Security | sev=Media
+  [#28] Cabecera de seguridad ausente | http://127.0.0.1:5000/buscar?q=hola | Content-Security-Policy | sev=Media/Alta
+  [#29] Cabecera de seguridad ausente | http://127.0.0.1:5000/buscar?q=hola | X-Frame-Options | sev=Media
+  [#30] Cabecera de seguridad ausente | http://127.0.0.1:5000/buscar?q=hola | X-Content-Type-Options | sev=Baja
+  [#31] Cabecera de seguridad ausente | http://127.0.0.1:5000/buscar?q=hola | Strict-Transport-Security | sev=Media
+  [#32] Cabecera de seguridad ausente | http://127.0.0.1:5000/comentarios | Content-Security-Policy | sev=Media/Alta
+  [#33] Cabecera de seguridad ausente | http://127.0.0.1:5000/comentarios | X-Frame-Options | sev=Media
+  [#34] Cabecera de seguridad ausente | http://127.0.0.1:5000/comentarios | X-Content-Type-Options | sev=Baja
+  [#35] Cabecera de seguridad ausente | http://127.0.0.1:5000/comentarios | Strict-Transport-Security | sev=Media
+  [#36] Cabecera de seguridad ausente | http://127.0.0.1:5000/login | Content-Security-Policy | sev=Media/Alta
+  [#37] Cabecera de seguridad ausente | http://127.0.0.1:5000/login | X-Frame-Options | sev=Media
+  [#38] Cabecera de seguridad ausente | http://127.0.0.1:5000/login | X-Content-Type-Options | sev=Baja
+  [#39] Cabecera de seguridad ausente | http://127.0.0.1:5000/login | Strict-Transport-Security | sev=Media
+  [#40] Cookie insegura | http://127.0.0.1:5000/login | cookie 'session_id' | sev=Media
