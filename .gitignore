@@ -1,0 +1,15 @@
+# Entornos y dependencias
+venv/
+__pycache__/
+*.pyc
+
+# Bases de datos generadas en tiempo de ejecución
+storage/findings.db
+target/target.db
+
+# Credenciales y secretos (NUNCA subir)
+.env
+*.key
+
+# Sistema
+.DS_Store
